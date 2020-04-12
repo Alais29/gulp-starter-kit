@@ -60,8 +60,11 @@ function concatCSS() {
 
 function javascript() {
   return gulp.src(jsSRC)
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(concat('script.js'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(lineec())
     .pipe(gulp.dest(jsdist));
 }
@@ -80,6 +83,7 @@ function imageminFn() {
 function watch() {
   browserSync.init({
     open: 'external',
+    browser: "chrome",
     server: {
       baseDir: '../dist'
     }
@@ -88,7 +92,7 @@ function watch() {
   gulp.watch(jsSRC, javascript);
   gulp.watch(imgSRC, imageminFn);
   gulp.watch(pugWatchFiles, html);
-  gulp.watch([pugWatchFiles, jsdist + 'script.js', cssdist + 'style.min.css']).on('change', browserSync.reload);
+  gulp.watch([pugWatchFiles, jsdist + 'script.js', cssdist + 'style.min.css']).on('change', reload);
 }
 
 exports.html = html;
