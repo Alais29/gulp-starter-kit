@@ -16,7 +16,6 @@ const gulp = require('gulp'),
 const root = '../',
       scss = root + 'src/sass/',
       js = root + 'src/js/',
-      pugsrc = root + 'src/pug/',
       jsdist = root + 'dist/assets/js/',
       cssdist = root + 'dist/assets/css/';
 
@@ -92,7 +91,7 @@ function watch() {
   gulp.watch(jsSRC, javascript);
   gulp.watch(imgSRC, imageminFn);
   gulp.watch(pugWatchFiles, html);
-  gulp.watch([pugWatchFiles, jsdist + 'script.js', cssdist + 'style.min.css']).on('change', reload);
+  gulp.watch([pugWatchFiles, jsdist + 'script.js', cssdist + 'style.css']).on('change', reload);
 }
 
 exports.html = html;
