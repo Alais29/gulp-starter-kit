@@ -16,8 +16,8 @@ A simple Gulp 4 starter kit
 To start using the kit, open the project, go to the dev-gulp folder and run ```npm install``` then command ```gulp```
 
 ```
-npm install
 cd dev-gulp
+npm install
 gulp
 ```
 
