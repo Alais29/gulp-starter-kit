@@ -13,13 +13,12 @@ A simple Gulp 4 starter kit
   - Initialize a local server with BrowserSync at http://localhost:3000 with autoreloading
 
 ### Use
-To start using the kit, open the project, go to the dev-gulp folder and run the command gulp
+To start using the kit, open the project, go to the dev-gulp folder and run ```npm install``` then command ```gulp```
 
 ```
-
+npm install
 cd dev-gulp
 gulp
-
 ```
 
 This will open up a browser window with the project running, and any made changed and saved on a pug, js or scss file will autoreload the browser window.
