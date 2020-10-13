@@ -9,9 +9,9 @@
   "author": "Alfonsina Lizardo",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "browser-sync": "^2.26.7",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
@@ -21,7 +21,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-line-ending-corrector": "^1.0.3",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
   }

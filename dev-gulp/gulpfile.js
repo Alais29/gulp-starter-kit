@@ -19,7 +19,7 @@ const root = '../',
       jsdist = root + 'dist/assets/js/',
       cssdist = root + 'dist/assets/css/';
 
-const imgSRC = root + 'src/images/*',
+const imgSRC = root + 'src/images/**/*',
       imgDEST = root + 'dist/assets/images';
 
 const styleWatchFiles = root + 'src/**/*.scss',
