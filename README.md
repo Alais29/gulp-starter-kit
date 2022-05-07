@@ -21,4 +21,4 @@ npm install
 gulp
 ```
 
-This will open up a browser window with the project running, and any made changed and saved on a pug, js or scss file will autoreload the browser window.
+This will open up a browser window with the project running, and any change made and saved on a pug, js or scss file will autoreload the browser window.
